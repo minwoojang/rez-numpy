@@ -12,9 +12,8 @@ description = \
     """
 
 requires = [
-    "cmake-3",
-    "gcc-6",
-    "python-2.7"
+    "cmake-3+",
+    "python-2.7+<3"
 ]
 
 variants = [
@@ -26,9 +25,13 @@ build_system = "cmake"
 with scope("config") as config:
     config.build_thread_count = "logical_cores"
 
-#TODO: Use the SHA1 of the archive instead.
-uuid = "numpy-1.12.1"
+uuid = "numpy-{version}".format(version=str(version))
 
 def commands():
     env.PATH.prepend("{root}/bin")
     env.PYTHONPATH.prepend("{root}")
+
+    # Helper environment variables.
+    env.NUMPY_BINARY_PATH.set("{root}/bin")
+    env.NUMPY_INCLUDE_PATH.set("{root}/numpy/core/include")
+    env.NUMPY_LIBRARY_PATH.set("{root}/numpy/core/lib")

@@ -18,6 +18,16 @@ echo -e "[INSTALL][ARGS] INSTALL PATH: ${INSTALL_PATH}"
 echo -e "[INSTALL][ARGS] PYSIDE2 URL: ${NUMPY_URL}"
 echo -e "[INSTALL][ARGS] PYSIDE2 VERSION: ${NUMPY_VERSION}"
 
+# We check if the arguments variables we need are correctly set.
+# If not, we abort the process.
+if [[ -z ${INSTALL_PATH} || -z ${NUMPY_URL} || -z ${NUMPY_VERSION} ]]; then
+    echo -e "\n"
+    echo -e "[INSTALL][ARGS] One or more of the argument variables are empty. Aborting..."
+    echo -e "\n"
+
+    exit 1
+fi
+
 # We install NumPy.
 echo -e "\n"
 echo -e "[INSTALL] Installing NumPy-${NUMPY_VERSION}..."
