@@ -11,7 +11,7 @@ rez_set_archive(
     # we can build, using the following hierarchy:
     # "${REZ_REPO_PAYLOAD_DIR}/project_name/archive.what.ever"
     NUMPY_URL numpy/numpy-${REZ_BUILD_PROJECT_VERSION}-cp27-cp27mu-manylinux1_x86_64.whl
-    https://files.pythonhosted.org/packages/f9/d5/f24f86b51298f171826a398efdd64b5214b687a28a2f05ff736b1505b1b2/numpy-1.12.1-cp27-cp27mu-manylinux1_x86_64.whl
+    https://files.pythonhosted.org/packages/f9/d5/f24f86b51298f171826a398efdd64b5214b687a28a2f05ff736b1505b1b2/numpy-${REZ_BUILD_PROJECT_VERSION}-cp27-cp27mu-manylinux1_x86_64.whl
 )
 
 # In the case of a Python pip wheel file, we do not have any archive to extract, so we can just execute our Bash
