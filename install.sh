@@ -34,7 +34,11 @@ echo -e "[INSTALL] Installing NumPy-${NUMPY_VERSION}..."
 echo -e "\n"
 
 # We copy the necessary files to the install directory.
-pip2 install ${NUMPY_URL} --target ${INSTALL_PATH} --upgrade --no-dependencies
+pip2 \
+    install ${NUMPY_URL} \
+    --target ${INSTALL_PATH} \
+    --upgrade \
+    --no-dependencies
 
 echo -e "\n"
 echo -e "[INSTALL] Finished installing NumPy-${NUMPY_VERSION}!"
