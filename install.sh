@@ -15,8 +15,8 @@ echo -e "==============="
 echo -e "\n"
 
 echo -e "[INSTALL][ARGS] INSTALL PATH: ${INSTALL_PATH}"
-echo -e "[INSTALL][ARGS] PYSIDE2 URL: ${NUMPY_URL}"
-echo -e "[INSTALL][ARGS] PYSIDE2 VERSION: ${NUMPY_VERSION}"
+echo -e "[INSTALL][ARGS] NUMPY URL: ${NUMPY_URL}"
+echo -e "[INSTALL][ARGS] NUMPY VERSION: ${NUMPY_VERSION}"
 
 # We check if the arguments variables we need are correctly set.
 # If not, we abort the process.
