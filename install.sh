@@ -34,7 +34,7 @@ echo -e "[INSTALL] Installing NumPy-${NUMPY_VERSION}..."
 echo -e "\n"
 
 # We copy the necessary files to the install directory.
-pip2 \
+pip \
     install ${NUMPY_URL} \
     --target ${INSTALL_PATH} \
     --upgrade \

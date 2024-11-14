@@ -12,13 +12,13 @@ description = \
     """
 
 requires = [
-    "cmake-3+",
-    "pip-19+",
-    "python-2.7+<3"
+    "cmake",
+    "pip-21.3",
+    "python-3.7"
 ]
 
 variants = [
-    ["platform-linux"]
+    ['platform-linux', 'arch-x86_64']
 ]
 
 build_system = "cmake"
