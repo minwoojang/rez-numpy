@@ -1,6 +1,6 @@
 name = "numpy"
 
-version = "1.12.1"
+version = "1.21.6"
 
 authors = [
     "Travis E. Oliphant et al."
@@ -13,6 +13,11 @@ description = \
 
 requires = [
     "cmake",
+    "pip-21.3",
+    "python-3.7"
+]
+
+build_requires = [
     "pip-21.3",
     "python-3.7"
 ]

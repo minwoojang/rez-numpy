@@ -11,9 +11,9 @@ rez_set_archive(
     # we can build, using the following hierarchy:
     # "${REZ_REPO_PAYLOAD_DIR}/project_name/archive.what.ever"
     #NUMPY_URL numpy/numpy-${REZ_BUILD_PROJECT_VERSION}-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
-    NUMPY_URL numpy/numpy-1.21.2-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+    NUMPY_URL numpy/numpy-1.21.6-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl 
     #https://files.pythonhosted.org/packages/2c/44/4210d16af96fe03f41c64bac2146435dc521a6e0457fdb3b5d15e1844578/numpy-${REZ_BUILD_PROJECT_VERSION}-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
-    https://files.pythonhosted.org/packages/2c/44/4210d16af96fe03f41c64bac2146435dc521a6e0457fdb3b5d15e1844578/numpy-1.21.2-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+    https://files.pythonhosted.org/packages/2e/5a/6f3e280a10de48395053a559bfcb3b2221b74b57d062c1d6307fc965f549/numpy-1.21.6-pp37-pypy37_pp73-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
 )
 
 # In the case of a Python pip wheel file, we do not have any archive to extract, so we can just execute our Bash
